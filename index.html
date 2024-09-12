@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro de Usuarios</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <div id="page" class="site">
+            <div class="container">
+                <div class="form-box">
+                    <div class="progress">
+                        <div class="logo"><a href=""><span>.web</span>design</a></div>
+                        <ul class="progress-steps">
+                            <li class="step active">
+                                <span>1</span>
+                                <p>Personal <br><span>25 secs to complete</span></p>
+                            </li>
+                            <li class="step">
+                                <span>2</span>
+                                <p>Conact <br><span>60 secs to complete</span></p>
+                            </li>
+                            <li class="step">
+                                <span>3</span>
+                                <p>Security <br><span>30 secs to complete</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="">
+                        <div class="form-one form-step active">
+                            <div class="bg-svg"></div>
+                            <h2>Personal information</h2>
+                            <p>Enter your personal information correctly</p>
+                            <div>
+                                <label>First Name</label>
+                                <input type="text" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label for="">Last Name</label>
+                                <input type="text" placeholder="Enter your Last name">
+                            </div>
+                            <div class="birth">
+                                <label>Date of birthday</label>
+                                <div class="grouping">
+                                    <input type="text" patter="[0-9]*" name="day"   value="" min="0" max="31" placeholder="DD">
+                                    <input type="text" patter="[0-9]*" name="month" value="" min="0" max="12" placeholder="MM">
+                                    <input type="text" patter="[0-9]*" name="year"  value="" min="0" max="2050" placeholder="YYYY">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-two form-step">
+                            <div class="bg-svg"></div>
+                            <h2>Contact</h2>
+                            <div>
+                                <label>Phone</label>
+                                <input type="tel" placeholder="Ingresa tu número">
+                            </div>
+                            <div>
+                                <label>Dirección</label>
+                                <input type="text" placeholder="Ingresa tu Dirección">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="otro">
+                            </div>
+                            <div>
+                                <label>Ciudad</label>
+                                <input type="text" placeholder="Ingresa tu Ciudad">
+                            </div>
+                            <div>
+                                <label>Estado</label>
+                                <input type="text" placeholder="Ingresa tu estado">
+                            </div>
+                            <div>
+                                <label>Código postal</label>
+                                <input type="text" placeholder="Ingresa tu CP.">
+                            </div>
+                            <div>
+                                <label>Pais</label>
+                            <select name="country" id="country">
+                                <option value="">Select el pais</option>
+                                <option value="Mexico">México</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="form-three form-step">
+                            <div class="bg-svg"></div>
+                                <h2>Security</h2>
+                                <div>
+                                    <label>Email</label>
+                                    <input type="email" placeholder="Ingresa tu email">
+                                </div>
+                                <div>
+                                    <label>Usuario</label>
+                                    <input type="text" placeholder="Ingresa tu Usuario">
+                                </div>
+                                <div>
+                                    <label>Password</label>
+                                    <input type="password" placeholder="Ingresa tu password">
+                                </div>
+                                <div>
+                                    <input type="password" placeholder="confirma tu password">
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox">
+                                    <label>Receive our new letter</label>
+                                </div>
+                           
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn-prev" disabled>back</button>
+                            <button type="button" class="btn-next">next</button>
+                            <button type="button" class="btn-submit">send</button>
+                        </div>
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+        <script src="script.js"></script>
+        
+    </body>
+</html>
